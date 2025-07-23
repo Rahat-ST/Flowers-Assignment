@@ -11,12 +11,14 @@
 
 .display-flex {
     display: flex;
+
 }
 
 .navbar {
     justify-content: space-between;
     max-width: 1140px;
     margin: 0 auto;
+
 
 
 
@@ -75,6 +77,72 @@
 
 }
 
+.img {}
+
 #color {
     color: #E95A08;
+}
+
+@media screen (max-width:576px) {
+    .banner {
+        flex-wrap: wrap-reverse;
+
+        .img {
+            grid-template-columns: repeat(1 1fr);
+        }
+    }
+}
+
+/* part-2 */
+.plants {
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 0%;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.CART {
+    background-color: #E95A08;
+    width: 270px;
+    height: 50px;
+    color: white;
+    padding: 19px 19px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+
+}
+
+.number {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.lily {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media screen and (max-width:576px) {
+    .name {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:1140px) {
+    .name {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
