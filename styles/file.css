@@ -144,5 +144,75 @@
 @media screen and (min-width:577px) and (max-width:1140px) {
     .name {
         grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+/* part-3 */
+.features {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 210px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+
+}
+
+.picture {
+    width: 100%;
+
+
+}
+
+
+.badge {
+    position: absolute;
+    top: -110px;
+    right: -100px;
+    width: 286px;
+    height: 286px;
+    display: block;
+}
+
+.loves {
+    font-weight: 700;
+    font-size: 50px;
+
+}
+
+.shop {
+    color: #8987A1;
+    font-size: 22px;
+    font-weight: 200;
+
+}
+
+@media screen and (max-width:576px) {
+    .features {
+        flex-direction: column;
+
+        .badge {
+            display: none;
+        }
+
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:1140px) {
+    .features {
+        flex-direction: column;
+
+        .badge {
+            display: none;
+        }
+
     }
 }
